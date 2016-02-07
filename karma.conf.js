@@ -10,10 +10,11 @@ module.exports = function (config) {
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'tests/components/_support/**', included: true},
-      {pattern: 'node_modules/react/dist/react-with-addons.js', included: true},
-      {pattern: 'src/client/components/**', included: true},
-      {pattern: 'tests/components/ui/**', included: true}
+      {pattern: 'tests/components/_support/**', included: false},
+      {pattern: 'node_modules/react/dist/react-with-addons.js', included: false},
+      {pattern: 'src/client/components/**', included: false},
+      {pattern: 'tests/components/ui/**', included: false},
+      {pattern: 'Features/**', included: true}
     ],
 
     // list of files to exclude
